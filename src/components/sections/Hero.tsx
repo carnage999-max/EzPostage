@@ -25,30 +25,12 @@ export function Hero() {
                         {/* Blob Background Layer */}
                         <motion.div
                             initial={{ opacity: 1, scale: 0.985, y: 10 }}
-                            animate={
-                                reduceMotion
-                                    ? { scale: 1, y: 0 }
-                                    : {
-                                        scale: 1,
-                                        y: 0,
-                                        borderRadius: [
-                                            "52% 48% 46% 54% / 54% 46% 55% 45%",
-                                            "58% 42% 52% 48% / 46% 54% 44% 56%",
-                                            "46% 54% 42% 58% / 58% 42% 56% 44%",
-                                            "52% 48% 46% 54% / 54% 46% 55% 45%",
-                                        ],
-                                    }
-                            }
-                            transition={
-                                reduceMotion
-                                    ? { duration: 0.45, ease: "easeOut" }
-                                    : { duration: 10, repeat: Infinity, ease: "easeInOut" }
-                            }
+                            animate={{ scale: 1, y: 0 }}
+                            transition={{ duration: 0.45, ease: "easeOut" }}
                             className="absolute inset-0 z-0 shadow-2xl"
                             style={{
                                 backgroundColor: "#0b1220",
-                                borderRadius: "52% 48% 46% 54% / 54% 46% 55% 45%",
-                                willChange: "border-radius",
+                                borderRadius: "50%",
                             }}
                         />
 
