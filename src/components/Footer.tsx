@@ -84,6 +84,18 @@ export function Footer() {
                     <div className="flex gap-4 mt-4 md:mt-0">
                     </div>
                 </div>
+                <p className="mt-4 text-center text-sm text-gray-500">
+                    Part of the{" "}
+                    <a
+                        href="https://se7eninc.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-white transition-colors underline"
+                    >
+                        Se7en
+                    </a>{" "}
+                    family of companies.
+                </p>
             </div>
         </footer>
     );
