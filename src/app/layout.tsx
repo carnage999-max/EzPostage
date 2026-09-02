@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -25,6 +26,11 @@ export default function RootLayout({
     <html lang="en">
       <body className="antialiased min-h-screen bg-[var(--background)] text-[var(--foreground)] selection:bg-[var(--color-accent)] selection:text-white">
         {children}
+        <Script
+          src="https://now-hiring-eta.vercel.app/widget.js"
+          data-icon="Mail"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
