@@ -27,7 +27,7 @@ export default function RootLayout({
       <body className="antialiased min-h-screen bg-[var(--background)] text-[var(--foreground)] selection:bg-[var(--color-accent)] selection:text-white">
         {children}
         <Script
-          src="https://now-hiring-eta.vercel.app/widget.js"
+          src="https://hiring.se7eninc.com/widget.js"
           data-icon="Mail"
           strategy="afterInteractive"
         />
